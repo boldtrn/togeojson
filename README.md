@@ -1,3 +1,5 @@
+**This repo is a fork from mapbox/geojson, the big difference of this repo is that it allows to find out from which gpx elements the geojson originates from**
+
 [![Build status](https://img.shields.io/travis/mapbox/togeojson.svg "Build status")](http://travis-ci.org/mapbox/togeojson)
 [![Coverage status](https://img.shields.io/coveralls/mapbox/togeojson.svg "Coverage status")](https://coveralls.io/r/mapbox/togeojson)
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
