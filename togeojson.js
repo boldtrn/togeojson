@@ -402,7 +402,15 @@ var toGeoJSON = (function() {
                 if (!line.line) return;
                 var prop = getProperties(node);
                 extend(prop, getLineStyle(get1(node, 'extensions')));
+
+                var rtept = get(node, 'rtept');
+                var rteptFeatures = [];
+                for (i = 0; i < rtept.length; i++) {
+                    rteptFeatures.push(getProperties(rtept[i]));
+                }
+                prop.rteptProperties = rteptFeatures;
                 prop.origin = 'rte';
+                
                 var routeObj = {
                     type: 'Feature',
                     properties: prop,
